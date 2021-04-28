@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+\usepackage[shortlabels]{enumitem}
+\usepackage{url}
+\usepackage{microtype}
+\usepackage{todonotes}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+
+\input{commands.tex}
+
+% Theorem Italics
+\theoremstyle{plain}
+\newtheorem{example_my}{Example}
+% Definition Bold
+\theoremstyle{definition}
+\newtheorem{project_my}{Potential Project}
+
+% \addbibresource{bibliography.bib}
+
+\title{Title}
+\author{Authors}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    Abstract!
+\end{abstract}
+
+\input{sections/1-introduction.tex}
+
+\clearpage
+
+\bibliographystyle{abbrv}
+\bibliography{bibliography}
+
+\end{document}
