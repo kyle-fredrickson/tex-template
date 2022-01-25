@@ -1,6 +1,38 @@
-% A nice way to comment in a document. Creates a new paragraph and writes the argument in blue.
-\newcommand{\comment}[1]
-{\par {\color{blue} #1 \par}}
+%% Formatting
+\newcommand{\questions}{\noindent {\bf Questions }}
+\newcommand{\comments}{\noindent {\bf Comments }}
+\newcommand{\research}{\noindent {\bf Research Ideas }}
 
-\newcommand{\TODO}[1]
-{\par {\bfseries \color{red} #1 \par}}
+%% Latin
+\newcommand{\etal}{{\it et al.}}
+\newcommand{\apriori}{{\it a priori}}
+
+%% Math Commands
+\newcommand{\xor}{\oplus}
+\newcommand{\fromuniform}{\xleftarrow{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\ceil}[1]{\left \lceil #1 \right \rceil}
+\newcommand{\floor}[1]{\left \lfloor #1 \right \rfloor}
+
+%% CS Commands
+\newcommand{\bigo}[1]{O(#1)}
+\newcommand{\littleo}[1]{o(#1)}
+\newcommand{\bigomega}[1]{\Omega(#1)}
+\newcommand{\littleomega}[1]{\omega(#1)}
+\newcommand{\bigtheta}[1]{\theta(#1)}
+
+%% Crypto Commands
+\newcommand{\nbit}[1]{\{0,1\}^{#1}}
+\newcommand{\adv}{\mathcal{A}}
+\newcommand{\negl}[1]{\mathsf{negl}(#1)}
+
+\newcommand{\gen}[1]{\mathsf{gen}(#1)}
+\newcommand{\enc}[2]{\mathsf{enc}_{#1}(#2)}
+\newcommand{\dec}[2]{\mathsf{dec}_{#1}(#2)}
+\newcommand{\sign}[2]{\mathsf{sign}_{#1}(#2)}
+\newcommand{\verify}[2]{\mathsf{verify}_{#1}(#2)}
+\newcommand{\h}[1]{\mathsf{H}(#1)}
+
+\newcommand{\concat}{\mathbin\Vert}
+\newcommand{\err}{\perp}
