@@ -1,7 +1,5 @@
 %% Formatting
-\newcommand{\questions}{\noindent {\bf Questions }}
-\newcommand{\comments}{\noindent {\bf Comments }}
-\newcommand{\research}{\noindent {\bf Research Ideas }}
+\newcommand{\sys}{System }
 
 %% Latin
 \newcommand{\etal}{{\it et al.}}
@@ -25,6 +23,8 @@
 %% Crypto Commands
 \newcommand{\nbit}[1]{\{0,1\}^{#1}}
 \newcommand{\adv}{\mathcal{A}}
+\newcommand{\users}{\mathcal{U}}
+\newcommand{\leak}[1]{\mathcal{L}(#1)}
 \newcommand{\negl}[1]{\mathsf{negl}(#1)}
 
 \newcommand{\gen}[1]{\mathsf{gen}(#1)}
@@ -33,6 +33,8 @@
 \newcommand{\sign}[2]{\mathsf{sign}_{#1}(#2)}
 \newcommand{\verify}[2]{\mathsf{verify}_{#1}(#2)}
 \newcommand{\h}[1]{\mathsf{H}(#1)}
+\newcommand{\send}[2]{\mathsf{send}_{#1}(#2)}
+\newcommand{\receive}[1]{\mathsf{receive}_{#1}}
 
 \newcommand{\concat}{\mathbin\Vert}
 \newcommand{\err}{\perp}
