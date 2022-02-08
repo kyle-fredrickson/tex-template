@@ -1,5 +1,8 @@
 %% Formatting
 \newcommand{\sys}{System }
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{lemma}[theorem]{Lemma}
 
 %% Latin
 \newcommand{\etal}{{\it et al.}}
@@ -33,8 +36,9 @@
 \newcommand{\sign}[2]{\mathsf{sign}_{#1}(#2)}
 \newcommand{\verify}[2]{\mathsf{verify}_{#1}(#2)}
 \newcommand{\h}[1]{\mathsf{H}(#1)}
-\newcommand{\send}[2]{\mathsf{send}_{#1}(#2)}
-\newcommand{\receive}[1]{\mathsf{receive}_{#1}}
+\newcommand{\dial}[2]{#1\mathsf{.dial}(#2)}
+\newcommand{\send}[3]{#1\mathsf{.send}(#2, #3)}
+\newcommand{\receive}[2]{#1\mathsf{.receive}(#2)}
 
 \newcommand{\concat}{\mathbin\Vert}
 \newcommand{\err}{\perp}
